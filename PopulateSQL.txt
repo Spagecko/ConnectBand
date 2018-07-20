@@ -1,0 +1,21 @@
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Punk Rock');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Electronica ');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Indie Rock');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Rock');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Rap');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Folk');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Metal');
+
+// images will be figured out  later 
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'JunkerPunkers', '1');	
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'BeeLight', '5');
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'FLoster & Merdock ', '7');
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'RollerRockers', '9');
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, '2 Quarters ', '11');
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'Hemlock ', '13');
+INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'DeathLAZERS', '14');
+
+//test user 
+INSERT INTO `user_master` (`user_id`, `user_name`, `email`, `password`, `mobile`, `first_name`, `last_name`) VALUES (NULL, 'Tester1', 'Thomastestalot@gmail.com', '', '8675309', 'Thomas', 'Test');
+
+//feedback 
