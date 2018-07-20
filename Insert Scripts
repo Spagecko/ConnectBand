@@ -1,0 +1,20 @@
+Table Name:  category_master
+
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Rock');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Pop');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Jazz');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Metal');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Country');
+INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Blues');
+
+Table Name: band_master
+
+ALTER TABLE band_master drop column band_image2;
+ALTER TABLE `band_master` CHANGE `band_image1` `band_image1` VARCHAR(1000) NOT NULL;
+ALTER TABLE `band_master` CHANGE `band_detailImage` `band_detailImage` VARCHAR(1000) NOT NULL;
+
+
+INSERT INTO `band_master` (`band_id`, `band_name`, `band_image1`, `band_detailImage`, `category_id`) VALUES 
+(NULL, 'The Chainsmokers', 'resources/band1.jpg', '', '1'), (NULL, 'Linkin Park', 'resources/band2.jpg', '', '4');
+
+
