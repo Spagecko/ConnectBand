@@ -23,3 +23,5 @@ INSERT INTO `band_master` (`band_id`, `band_name`, `band_image1`, `band_detailIm
 INSERT INTO `user_master` (`user_id`, `user_name`, `email`, `password`, `mobile`, `first_name`, `last_name`) VALUES (NULL, 'Tester1', 'Thomastestalot@gmail.com', '', '8675309', 'Thomas', 'Test');
 
 //feedback 
+ALTER TABLE `feedback_master` CHANGE `vote` `votes_up` INT(11) NOT NULL DEFAULT '0';
+ALTER TABLE `feedback_master` ADD `votes_down` INT(11) NOT NULL DEFAULT '0' AFTER `votes_up`;
