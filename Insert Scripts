@@ -5,7 +5,5 @@ ALTER TABLE `band_master` CHANGE `band_image1` `band_image1` VARCHAR(1000) NOT N
 ALTER TABLE `band_master` CHANGE `band_detailImage` `band_detailImage` VARCHAR(1000) NOT NULL;
 
 
-INSERT INTO `band_master` (`band_id`, `band_name`, `band_image1`, `band_detailImage`, `category_id`) VALUES 
-(NULL, 'The Chainsmokers', 'resources/band1.jpg', '', '1'), (NULL, 'Linkin Park', 'resources/band2.jpg', '', '4');
 
 
