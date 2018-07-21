@@ -1,12 +1,3 @@
-Table Name:  category_master
-
-INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Rock');
-INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Pop');
-INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Jazz');
-INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Metal');
-INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Country');
-INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Blues');
-
 Table Name: band_master
 
 ALTER TABLE band_master drop column band_image2;
