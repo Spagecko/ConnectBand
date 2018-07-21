@@ -1,3 +1,7 @@
+ALTER TABLE category_master AUTO_INCREMENT = 1;
+ALTER TABLE band_master AUTO_INCREMENT = 1;
+
+
 INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Punk Rock');
 INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Electronica ');
 INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Indie Rock');
@@ -10,10 +14,10 @@ INSERT INTO `category_master` (`category_id`, `category_name`) VALUES (NULL, 'Me
 INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'JunkerPunkers', '1');	
 INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'BeeLight', '5');
 INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'FLoster & Merdock ', '7');
-INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'RollerRockers', '9');
-INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, '2 Quarters ', '11');
-INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'Hemlock ', '13');
-INSERT INTO `band_master` (`band_id`, `band_name`, `category_id`) VALUES (NULL, 'DeathLAZERS', '14');
+
+INSERT INTO `band_master` (`band_id`, `band_name`, `band_image1`, `band_detailImage`, `category_id`) VALUES (NULL, 'RollerRockers', 'assets/img/portfolio/4.jpg', '', '1'), (NULL, '2 Quarters', 'assets/img/portfolio/5.jpg', '', '2');
+
+INSERT INTO `band_master` (`band_id`, `band_name`, `band_image1`, `band_detailImage`, `category_id`) VALUES (NULL, 'Hemlock', 'assets/img/portfolio/6.jpg', '', '4'), (NULL, 'DeathLAZERS', 'assets/img/portfolio/7.jpg', '', '3');
 
 //test user 
 INSERT INTO `user_master` (`user_id`, `user_name`, `email`, `password`, `mobile`, `first_name`, `last_name`) VALUES (NULL, 'Tester1', 'Thomastestalot@gmail.com', '', '8675309', 'Thomas', 'Test');
