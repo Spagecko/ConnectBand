@@ -1,9 +1,0 @@
-Table Name: band_master
-
-ALTER TABLE band_master drop column band_image2;
-ALTER TABLE `band_master` CHANGE `band_image1` `band_image1` VARCHAR(1000) NOT NULL;
-ALTER TABLE `band_master` CHANGE `band_detailImage` `band_detailImage` VARCHAR(1000) NOT NULL;
-
-
-
-
