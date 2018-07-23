@@ -1,0 +1,167 @@
+<?php
+  $host = "localhost";
+  $user = "";
+  $password = "";
+  $db = "users_db";
+
+  $con = mysqli_connect($host, $user, $password, $db);
+
+  // SignIn function
+  if(isset($_POST['log-submit'])){
+    $uname = $_POST['uname'];
+    $password = $_POST['psw'];
+    $sql = "select * from signin where username = '".$uname."'AND password = '".$password."'";
+    $result = mysqli_query($con, $sql);
+
+    if(mysqli_num_rows($result) == 1){
+      echo "You have successfully logged in";
+      exit();
+    }
+    else{
+      echo "You have entered Incorrect Password";
+      exit();
+    }
+  }
+  
+  // SignUp function
+  if (isset($_POST['re-submit'])){
+      $username = mysqli_real_escape_string($con, $_POST['user_login']);
+      $password = mysqli_real_escape_string($con, $_POST['user_pass']);
+      $password2 = mysqli_real_escape_string($con, $_POST['user_pass2']);
+      
+      if($password == $password2){
+         $sql = "INSERT INTO signin(username, password) VALUES('$username', '$password')";
+         mysqli_query($con, $sql);
+         echo "You have successfully register";
+         exit();
+      }
+      else{
+          echo "The two passwords do not match";
+          exit();
+      }
+  }
+  
+?>
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Login</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" id="font-awesome-css" href="helper/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="fl-builder-layout-274-css" href="helper/274-layout.css" type="text/css" media="all">
+	<link rel="stylesheet" id="popup-maker-site-css" href="helper/pum-site-styles-15.css" type="text/css" media="all">
+	<link rel="stylesheet" id="pum-alm-css" href="helper/site.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="animate-css" href="helper/animate.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="mono-social-icons-css" href="helper/mono-social-icons.css" type="text/css" media="all">
+	<link rel="stylesheet" id="jquery-magnificpopup-css" href="helper/jquery.magnificpopup.css" type="text/css" media="all">
+	<link rel="stylesheet" id="bootstrap-css" href="helper/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="fl-automator-skin-css" href="helper/skin-589cb3f5d3683.css" type="text/css" media="all">
+	<script type="text/javascript" src="helper/jquery.js.download"></script>
+	<script type="text/javascript" src="helper/jquery-migrate.min.js.download"></script>
+</head>
+<body class="page-template-default page page-id-274 fl-builder fl-preset-default-dark fl-full-width" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<!-- login button -->
+	<div class="fl-col-group fl-node-5795ca860f08a" data-node="5795ca860f08a">
+		<div class="fl-col fl-node-5795ca860f129" data-node="5795ca860f129" style="width: 100%;">
+			<div class="fl-col-content fl-node-content">
+				<div class="fl-module fl-module-button fl-node-5795ca860eb9e normal-button shake" data-node="5795ca860eb9e" data-animation-delay="0.0">
+					<div class="fl-module-content fl-node-content">
+						<div class="fl-button-wrap fl-button-width-auto fl-button-center">
+							<a href="http://examples.wppopupmaker.com/ajax-login-modals/form-options-fully-loaded#popmake-282" target="_self" class="fl-button pum-trigger" role="button" style="cursor: pointer;">
+								<span class="fl-button-text">Login</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="pum-282" class="pum pum-overlay pum-theme-17 pum-theme-default-theme popmake-overlay click_open" data-popmake="{&quot;id&quot;:282,&quot;slug&quot;:&quot;form-options-fully-loaded&quot;,&quot;theme_id&quot;:17,&quot;cookies&quot;:[],&quot;triggers&quot;:[{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;do_default&quot;:null,&quot;login_links&quot;:null,&quot;cookie&quot;:{&quot;name&quot;:null}}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;responsive_min_width&quot;:false,&quot;responsive_max_width&quot;:false,&quot;position_bottom&quot;:false,&quot;position_left&quot;:false,&quot;position_right&quot;:false,&quot;stackable&quot;:false,&quot;overlay_disabled&quot;:false,&quot;scrollable_content&quot;:false,&quot;disable_reposition&quot;:false,&quot;size&quot;:&quot;small&quot;,&quot;responsive_min_width_unit&quot;:&quot;px&quot;,&quot;responsive_max_width_unit&quot;:&quot;px&quot;,&quot;custom_width&quot;:&quot;640px&quot;,&quot;custom_width_unit&quot;:false,&quot;custom_height&quot;:&quot;380px&quot;,&quot;custom_height_unit&quot;:false,&quot;custom_height_auto&quot;:false,&quot;location&quot;:&quot;center top&quot;,&quot;position_from_trigger&quot;:false,&quot;position_top&quot;:&quot;100&quot;,&quot;position_fixed&quot;:false,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;overlay_zindex&quot;:&quot;1999999998&quot;,&quot;zindex&quot;:&quot;1999999999&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:false,&quot;esc_press&quot;:false,&quot;f4_press&quot;:false},&quot;click_open&quot;:[]}}" role="dialog" aria-hidden="true">
+		<div id="popmake-282" class="pum-container popmake theme-17 pum-responsive pum-responsive-small responsive size-small">
+			<div class="pum-content popmake-content">
+                <!-- login -->
+				<div class="pum-form-wrapper pum-alm-form-wrapper pum-login-form-wrapper popmake-ajax-form popmake-login-form" data-autoclose="1" data-autoclose-delay="1000">
+					<form id="ajax-login-form" name="pum-login-form" class="pum-form pum-alm-form pum-login-form layout-standard" action="#" method="POST" novalidate=""><input type="hidden" name="pum_form_popup_id" value="282">
+						<div class="pum-fields">
+						<div class="pum-field  pum-field-user_login  pum-field-text  ">			
+                            <label for="user_login">Username</label>
+                            <input type="text" placeholder="Username" class="regular-text" id="user_login" name="uname" required="">
+                        </div>
+                        <div class="pum-field  pum-field-user_pass  pum-field-password    pum-field-text">			
+                            <label for="user_pass">Password</label>
+                            <input type="password" placeholder="Password" class="regular-text" id="user_pass" name="psw" required="">
+                        </div>
+						<input type="hidden" class="pum-field  pum-field-_form_args  pum-field-hidden  " id="_form_args" name="_form_args" value="{&quot;disable_redirect&quot;:false,&quot;redirect&quot;:&quot;http://examples.wppopupmaker.com/ajax-login-modals/form-options-fully-loaded&quot;}">
+                        <div class="pum-field-button pum-field-wp-submit button-primary">
+                            <button type="submit" class="pum-button-regular" id="wp-submit" name="log-submit">Log In</button>
+                            <input type="hidden" name="wp-submit" value="Log In">
+                        </div>
+						</div>
+					</form>
+					<ul class="pum-alm-footer-links popmake-alm-footer-links">
+						<li>Don't have an account?<a href="http://examples.wppopupmaker.com/ajax-login-modals/wp-login.php?action=register">Register</a></li>
+					</ul>
+				</div>
+                
+                <!-- register -->
+				<div class="pum-form-wrapper pum-alm-form-wrapper pum-registration-form-wrapper popmake-ajax-form popmake-registration-form" data-autoclose="1" data-autoclose-delay="1000">
+					<form id="ajax-registration-form" name="pum-registration-form" class="pum-form pum-alm-form pum-registration-form layout-standard" action="#" method="POST" novalidate="">
+                    <input type="hidden" name="pum_form_popup_id" value="282">
+						<div class="pum-fields">
+                            <div class="pum-field  pum-field-user_login  pum-field-text  registration-username">			
+                                <label for="user_login">Username</label>
+                                <input type="text" placeholder="Username" class="regular-text" id="user_login" name="user_login" value="" required="">
+                            </div>
+                            <div class="pum-field  pum-field-user_email  pum-field-email  registration-email  pum-field-text">			
+                                <label for="user_email">Email</label>
+                                <input type="email" placeholder="Email" class="regular-text" id="user_email" name="user_email" value="" required="">
+                            </div>
+                            <div class="pum-field  pum-field-user_email2  pum-field-email    pum-field-text">			
+                                <label for="user_email2">Confirm Email</label>
+                                <input type="email" placeholder="Confirm Email" class="regular-text" id="user_email2" name="user_email2" value="" required="">
+                            </div>
+                            <div class="pum-field  pum-field-user_pass  pum-field-password    pum-field-text">			
+                                <label for="user_pass">Password			</label>
+                                <input type="password" placeholder="Password" class="regular-text" id="user_pass" name="user_pass" value="" required="">
+                            </div>
+                            <div class="pum-field  pum-field-user_pass2  pum-field-password    pum-field-text">			
+                                <label for="user_pass2">Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" class="regular-text" id="user_pass2" name="user_pass2" value="" required="">
+                            </div>
+                            <!-- register buttn -->
+                            <input type="hidden" class="pum-field  pum-field-_form_args  pum-field-hidden  " id="_form_args" name="_form_args" value="{&quot;enable_autologin&quot;:&quot;1&quot;,&quot;disable_redirect&quot;:false,&quot;redirect&quot;:&quot;http://examples.wppopupmaker.com/ajax-login-modals/form-options-fully-loaded&quot;}">
+                            <div class="pum-field-button pum-field-wp-submit button-primary">
+                                <button type="submit" class="pum-button-regular" id="wp-submit" name="re-submit">Register</button>
+                                <input type="hidden" name="wp-submit" value="Register">
+                            </div>
+						</div>
+					</form>
+					<ul class="pum-alm-footer-links popmake-alm-footer-links">
+						<li>Already have an account? <a href="http://examples.wppopupmaker.com/ajax-login-modals/wp-login.php">Log in</a></li>
+					</ul>
+				</div>
+			</div>
+			<button type="button" class="pum-close popmake-close" aria-label="Close">X</button>
+		</div>
+	</div>
+
+<script type="text/javascript" src="helper/position.min.js.download"></script>
+<script type="text/javascript">
+	var pum_vars = {"version":"1.7.22","ajaxurl":"http:\/\/examples.wppopupmaker.com\/ajax-login-modals\/wp-admin\/admin-ajax.php","restapi":"http:\/\/examples.wppopupmaker.com\/ajax-login-modals\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"17","debug_mode":"","popups":{"pum-353":{"disable_form_reopen":false,"disable_on_mobile":false,"disable_on_tablet":false,"custom_height_auto":false,"scrollable_content":false,"position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"theme_id":17,"size":"small","responsive_min_width_unit":"px","responsive_max_width_unit":"px","custom_width":"640px","custom_height":"380px","location":"center top","position_top":"100","animation_type":"fade","animation_speed":"350","animation_origin":"center top","overlay_zindex":"1999999998","zindex":"1999999999","close_button_delay":"0","triggers":[{"type":"click_block","settings":{"extra_selectors":"#example-grid > div > div.fl-post-grid.masonry > div:nth-child(2) > div.fl-post-grid-text > div > a, #fl-post-188 > div > div > div.fl-row.fl-row-fixed-width.fl-row-bg-none.fl-node-5795c7fc5ee34 > div > div > div.fl-col-group.fl-node-5795c7fc5f11d > div > div > div.fl-module.fl-module-rich-text.fl-node-5795c7fc5f1b1 > div > div > p > a:nth-child(3), .menu-item-372","requirements":{"login":["login"]},"cookie":{"name":null}}}],"id":353,"slug":"click-blocking"},"pum-282":{"disable_form_reopen":false,"disable_on_mobile":false,"disable_on_tablet":false,"custom_height_auto":false,"scrollable_content":false,"position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"theme_id":17,"size":"small","responsive_min_width_unit":"px","responsive_max_width_unit":"px","custom_width":"640px","custom_height":"380px","location":"center top","position_top":"100","animation_type":"fade","animation_speed":"350","animation_origin":"center top","overlay_zindex":"1999999998","zindex":"1999999999","close_button_delay":"0","triggers":[{"type":"click_open","settings":{"extra_selectors":"","do_default":null,"login_links":null,"cookie":{"name":null}}}],"id":282,"slug":"form-options-fully-loaded"}},"disable_tracking":"","home_url":"\/ajax-login-modals\/","message_position":"top","core_sub_forms_enabled":"1"};
+	var ajaxurl = "http:\/\/examples.wppopupmaker.com\/ajax-login-modals\/wp-admin\/admin-ajax.php";
+	var pum_debug_vars = {"debug_mode_enabled":"Popup Maker: Debug Mode Enabled","debug_started_at":"Debug started at:","debug_more_info":"For more information on how to use this information visit https:\/\/docs.wppopupmaker.com\/?utm_medium=js-debug-info&utm_campaign=ContextualHelp&utm_source=browser-console&utm_content=more-info","global_info":"Global Information","localized_vars":"Localized variables","popups_initializing":"Popups Initializing","popups_initialized":"Popups Initialized","single_popup_label":"Popup: #","theme_id":"Theme ID: ","label_method_call":"Method Call:","label_method_args":"Method Arguments:","label_popup_settings":"Settings","label_triggers":"Triggers","label_cookies":"Cookies","label_delay":"Delay:","label_conditions":"Conditions","label_cookie":"Cookie:","label_settings":"Settings:","label_selector":"Selector:","label_mobile_disabled":"Mobile Disabled:","label_tablet_disabled":"Tablet Disabled:","label_event":"Event: %s","triggers":{"click_open":"Click Open","auto_open":"Time Delay \/ Auto Open","click_block":"Click Blocking","force_login":"Force Login"},"cookies":{"on_popup_close":"On Popup Close","on_popup_open":"On Popup Open","pum_sub_form_success":"Subscription Form: Successful","pum_sub_form_already_subscribed":"Subscription Form: Already Subscribed","manual":"Manual JavaScript","ninja_form_success":"Ninja Form Success","login_successful":"Login Successful","registration_successful":"Registration Successful"}};
+	var pum_sub_vars = {"ajaxurl":"http:\/\/examples.wppopupmaker.com\/ajax-login-modals\/wp-admin\/admin-ajax.php","message_position":"top"};
+</script>
+<script type="text/javascript" src="helper/pum-site-scripts-15.js.download"></script>
+<script type="text/javascript" src="helper/site.min.js.download"></script>
+<script type="text/javascript" src="helper/jquery.throttle.min.js.download"></script>
+<script type="text/javascript" src="helper/jquery.magnificpopup.min.js.download"></script>
+<script type="text/javascript" src="helper/bootstrap.min.js.download"></script>
+<script type="text/javascript" src="helper/theme.js.download"></script>
+<script type="text/javascript" src="helper/wp-embed.min.js.download"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ab17f0d047","applicationID":"73431823","transactionName":"YFBaNhRXWRcEBkReWlkaeQESX1gKShVRUFA=","queueTime":0,"applicationTime":965,"atts":"TBdZQFxNShk=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+</body>
+</html>
