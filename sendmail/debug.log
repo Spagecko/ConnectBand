@@ -1,0 +1,532 @@
+18-07-19 23:57:22 ** --- MESSAGE BEGIN ---
+18-07-19 23:57:22 ** To: samarth_29@yahoo.com
+18-07-19 23:57:22 ** Subject: Testing sendmail.exe
+18-07-19 23:57:22 ** X-PHP-Originating-Script: 0:send-mail.php
+18-07-19 23:57:22 ** From: [connectband.473]@gmail.com
+18-07-19 23:57:22 ** MIME-Version: 1.0
+18-07-19 23:57:22 ** Content-type: text/html; charset=utf-8
+18-07-19 23:57:22 ** 
+18-07-19 23:57:22 ** Hi, you just received an email using sendmail!
+18-07-19 23:57:22 ** --- MESSAGE END ---
+18-07-19 23:57:22 ** Connecting to smtp.gmail.com:465
+18-07-19 23:57:23 ** Connected.
+18-07-19 23:57:23 << 220 smtp.gmail.com ESMTP y27-v6sm1864067pff.181 - gsmtp<EOL>
+18-07-19 23:57:23 >> EHLO localhost<EOL>
+18-07-19 23:57:23 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-19 23:57:23 ** Authenticating as connectband.473@gmail.com
+18-07-19 23:57:23 >> AUTH LOGIN<EOL>
+18-07-19 23:57:23 << 334 VXNlcm5hbWU6<EOL>
+18-07-19 23:57:23 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-19 23:57:23 << 334 UGFzc3dvcmQ6<EOL>
+18-07-19 23:57:23 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-19 23:57:24 << 235 2.7.0 Accepted<EOL>
+18-07-19 23:57:24 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-19 23:57:24 << 250 2.1.0 OK y27-v6sm1864067pff.181 - gsmtp<EOL>
+18-07-19 23:57:24 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-19 23:57:24 << 250 2.1.5 OK y27-v6sm1864067pff.181 - gsmtp<EOL>
+18-07-19 23:57:24 >> DATA<EOL>
+18-07-19 23:57:24 << 354  Go ahead y27-v6sm1864067pff.181 - gsmtp<EOL>
+18-07-19 23:57:24 >> Date: Thu, 19 Jul 2018 23:57:24 -0700<EOL>
+18-07-19 23:57:24 >> To: samarth_29@yahoo.com<EOL>
+18-07-19 23:57:24 >> Subject: Testing sendmail.exe<EOL>
+18-07-19 23:57:24 >> X-PHP-Originating-Script: 0:send-mail.php<EOL>
+18-07-19 23:57:24 >> From: [connectband.473]@gmail.com<EOL>
+18-07-19 23:57:24 >> MIME-Version: 1.0<EOL>
+18-07-19 23:57:24 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-19 23:57:24 >> <EOL>
+18-07-19 23:57:24 >> Hi, you just received an email using sendmail!<EOL>
+18-07-19 23:57:24 >> .<EOL>
+18-07-19 23:57:25 << 250 2.0.0 OK 1532069847 y27-v6sm1864067pff.181 - gsmtp<EOL>
+18-07-19 23:57:25 >> QUIT<EOL>
+18-07-19 23:57:25 << 221 2.0.0 closing connection y27-v6sm1864067pff.181 - gsmtp<EOL>
+18-07-19 23:57:25 ** Disconnected.
+18-07-19 23:57:25 ** Disconnected.
+18-07-19 23:57:25 ** Disconnected.
+18-07-19 23:59:54 ** --- MESSAGE BEGIN ---
+18-07-19 23:59:54 ** To: samarthshah.cs@gmail.com
+18-07-19 23:59:55 ** Subject: Testing sendmail.exe
+18-07-19 23:59:55 ** X-PHP-Originating-Script: 0:send-mail.php
+18-07-19 23:59:55 ** From: [connectband.473]@gmail.com
+18-07-19 23:59:55 ** MIME-Version: 1.0
+18-07-19 23:59:55 ** Content-type: text/html; charset=utf-8
+18-07-19 23:59:55 ** 
+18-07-19 23:59:55 ** Hi, you just received an email using sendmail!
+18-07-19 23:59:55 ** --- MESSAGE END ---
+18-07-19 23:59:55 ** Connecting to smtp.gmail.com:465
+18-07-19 23:59:55 ** Connected.
+18-07-19 23:59:55 << 220 smtp.gmail.com ESMTP z9-v6sm2289850pfi.150 - gsmtp<EOL>
+18-07-19 23:59:55 >> EHLO localhost<EOL>
+18-07-19 23:59:55 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-19 23:59:55 ** Authenticating as connectband.473@gmail.com
+18-07-19 23:59:55 >> AUTH LOGIN<EOL>
+18-07-19 23:59:55 << 334 VXNlcm5hbWU6<EOL>
+18-07-19 23:59:55 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-19 23:59:55 << 334 UGFzc3dvcmQ6<EOL>
+18-07-19 23:59:55 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-19 23:59:55 << 235 2.7.0 Accepted<EOL>
+18-07-19 23:59:55 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-19 23:59:55 << 250 2.1.0 OK z9-v6sm2289850pfi.150 - gsmtp<EOL>
+18-07-19 23:59:55 >> RCPT TO: <samarthshah.cs@gmail.com><EOL>
+18-07-19 23:59:56 << 250 2.1.5 OK z9-v6sm2289850pfi.150 - gsmtp<EOL>
+18-07-19 23:59:56 >> DATA<EOL>
+18-07-19 23:59:56 << 354  Go ahead z9-v6sm2289850pfi.150 - gsmtp<EOL>
+18-07-19 23:59:56 >> Date: Thu, 19 Jul 2018 23:59:56 -0700<EOL>
+18-07-19 23:59:56 >> To: samarthshah.cs@gmail.com<EOL>
+18-07-19 23:59:56 >> Subject: Testing sendmail.exe<EOL>
+18-07-19 23:59:56 >> X-PHP-Originating-Script: 0:send-mail.php<EOL>
+18-07-19 23:59:56 >> From: [connectband.473]@gmail.com<EOL>
+18-07-19 23:59:56 >> MIME-Version: 1.0<EOL>
+18-07-19 23:59:56 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-19 23:59:56 >> <EOL>
+18-07-19 23:59:56 >> Hi, you just received an email using sendmail!<EOL>
+18-07-19 23:59:56 >> .<EOL>
+18-07-19 23:59:57 << 250 2.0.0 OK 1532069998 z9-v6sm2289850pfi.150 - gsmtp<EOL>
+18-07-19 23:59:57 >> QUIT<EOL>
+18-07-19 23:59:57 << 221 2.0.0 closing connection z9-v6sm2289850pfi.150 - gsmtp<EOL>
+18-07-19 23:59:57 ** Disconnected.
+18-07-19 23:59:57 ** Disconnected.
+18-07-19 23:59:57 ** Disconnected.
+18-07-20 01:23:56 ** --- MESSAGE BEGIN ---
+18-07-20 01:23:56 ** To: connectband.437@gmail.com
+18-07-20 01:23:56 ** Subject: Get in Touch with
+18-07-20 01:23:56 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:23:56 ** From: [connectband.473]@gmail.com
+18-07-20 01:23:56 ** MIME-Version: 1.0
+18-07-20 01:23:56 ** Content-type: text/html; charset=utf-8
+18-07-20 01:23:57 ** 
+18-07-20 01:23:57 ** Hi, you just received an email from
+18-07-20 01:23:57 ** 
+18-07-20 01:23:57 ** --- MESSAGE END ---
+18-07-20 01:23:57 ** Connecting to smtp.gmail.com:465
+18-07-20 01:23:57 ** Connected.
+18-07-20 01:23:57 << 220 smtp.gmail.com ESMTP g11-v6sm1643032pfh.63 - gsmtp<EOL>
+18-07-20 01:23:57 >> EHLO localhost<EOL>
+18-07-20 01:23:57 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:23:57 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:23:57 >> AUTH LOGIN<EOL>
+18-07-20 01:23:57 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:23:57 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:23:57 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:23:57 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:23:57 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:23:57 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:23:57 << 250 2.1.0 OK g11-v6sm1643032pfh.63 - gsmtp<EOL>
+18-07-20 01:23:57 >> RCPT TO: <connectband.437@gmail.com><EOL>
+18-07-20 01:23:58 << 250 2.1.5 OK g11-v6sm1643032pfh.63 - gsmtp<EOL>
+18-07-20 01:23:58 >> DATA<EOL>
+18-07-20 01:23:58 << 354  Go ahead g11-v6sm1643032pfh.63 - gsmtp<EOL>
+18-07-20 01:23:58 >> Date: Fri, 20 Jul 2018 01:23:58 -0700<EOL>
+18-07-20 01:23:58 >> To: connectband.437@gmail.com<EOL>
+18-07-20 01:23:58 >> Subject: Get in Touch with<EOL>
+18-07-20 01:23:58 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:23:58 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:23:58 >> MIME-Version: 1.0<EOL>
+18-07-20 01:23:58 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:23:58 >> <EOL>
+18-07-20 01:23:58 >> Hi, you just received an email from<EOL>
+18-07-20 01:23:58 >> <EOL>
+18-07-20 01:23:58 >> .<EOL>
+18-07-20 01:23:59 << 250 2.0.0 OK 1532075041 g11-v6sm1643032pfh.63 - gsmtp<EOL>
+18-07-20 01:23:59 >> QUIT<EOL>
+18-07-20 01:23:59 << 221 2.0.0 closing connection g11-v6sm1643032pfh.63 - gsmtp<EOL>
+18-07-20 01:23:59 ** Disconnected.
+18-07-20 01:23:59 ** Disconnected.
+18-07-20 01:23:59 ** Disconnected.
+18-07-20 01:27:32 ** --- MESSAGE BEGIN ---
+18-07-20 01:27:32 ** To: samarth_29@yahoo.com
+18-07-20 01:27:32 ** Subject: Get in Touch withSamarth
+18-07-20 01:27:32 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:27:32 ** From: [connectband.473]@gmail.com
+18-07-20 01:27:32 ** MIME-Version: 1.0
+18-07-20 01:27:32 ** Content-type: text/html; charset=utf-8
+18-07-20 01:27:32 ** 
+18-07-20 01:27:32 ** Hi, you just received an email fromsamarth_29@yahoo.com
+18-07-20 01:27:32 ** hello there
+18-07-20 01:27:32 ** --- MESSAGE END ---
+18-07-20 01:27:32 ** Connecting to smtp.gmail.com:465
+18-07-20 01:27:33 ** Connected.
+18-07-20 01:27:33 << 220 smtp.gmail.com ESMTP n22-v6sm1445836pgv.60 - gsmtp<EOL>
+18-07-20 01:27:33 >> EHLO localhost<EOL>
+18-07-20 01:27:33 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:27:33 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:27:33 >> AUTH LOGIN<EOL>
+18-07-20 01:27:33 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:27:33 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:27:33 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:27:33 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:27:33 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:27:33 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:27:33 << 250 2.1.0 OK n22-v6sm1445836pgv.60 - gsmtp<EOL>
+18-07-20 01:27:33 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:27:33 << 250 2.1.5 OK n22-v6sm1445836pgv.60 - gsmtp<EOL>
+18-07-20 01:27:33 >> DATA<EOL>
+18-07-20 01:27:33 << 354  Go ahead n22-v6sm1445836pgv.60 - gsmtp<EOL>
+18-07-20 01:27:33 >> Date: Fri, 20 Jul 2018 01:27:33 -0700<EOL>
+18-07-20 01:27:33 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:27:33 >> Subject: Get in Touch withSamarth<EOL>
+18-07-20 01:27:33 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:27:33 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:27:33 >> MIME-Version: 1.0<EOL>
+18-07-20 01:27:33 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:27:33 >> <EOL>
+18-07-20 01:27:33 >> Hi, you just received an email fromsamarth_29@yahoo.com<EOL>
+18-07-20 01:27:33 >> hello there<EOL>
+18-07-20 01:27:33 >> .<EOL>
+18-07-20 01:27:34 << 250 2.0.0 OK 1532075256 n22-v6sm1445836pgv.60 - gsmtp<EOL>
+18-07-20 01:27:34 >> QUIT<EOL>
+18-07-20 01:27:34 << 221 2.0.0 closing connection n22-v6sm1445836pgv.60 - gsmtp<EOL>
+18-07-20 01:27:34 ** Disconnected.
+18-07-20 01:27:34 ** Disconnected.
+18-07-20 01:27:34 ** Disconnected.
+18-07-20 01:30:34 ** --- MESSAGE BEGIN ---
+18-07-20 01:30:34 ** To: samarth_29@yahoo.com
+18-07-20 01:30:34 ** Subject: Get in Touch with  KP
+18-07-20 01:30:34 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:30:34 ** From: [connectband.473]@gmail.com
+18-07-20 01:30:34 ** MIME-Version: 1.0
+18-07-20 01:30:34 ** Content-type: text/html; charset=utf-8
+18-07-20 01:30:34 ** 
+18-07-20 01:30:34 ** Hi, you just received an email fromsamarth_29@yahoo.com/r/nHow are you doing
+18-07-20 01:30:34 ** --- MESSAGE END ---
+18-07-20 01:30:34 ** Connecting to smtp.gmail.com:465
+18-07-20 01:30:35 ** Connected.
+18-07-20 01:30:35 << 220 smtp.gmail.com ESMTP c29-v6sm1982916pfe.169 - gsmtp<EOL>
+18-07-20 01:30:35 >> EHLO localhost<EOL>
+18-07-20 01:30:35 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:30:35 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:30:35 >> AUTH LOGIN<EOL>
+18-07-20 01:30:35 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:30:35 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:30:35 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:30:35 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:30:35 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:30:35 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:30:35 << 250 2.1.0 OK c29-v6sm1982916pfe.169 - gsmtp<EOL>
+18-07-20 01:30:35 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:30:35 << 250 2.1.5 OK c29-v6sm1982916pfe.169 - gsmtp<EOL>
+18-07-20 01:30:35 >> DATA<EOL>
+18-07-20 01:30:35 << 354  Go ahead c29-v6sm1982916pfe.169 - gsmtp<EOL>
+18-07-20 01:30:35 >> Date: Fri, 20 Jul 2018 01:30:35 -0700<EOL>
+18-07-20 01:30:35 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:30:35 >> Subject: Get in Touch with  KP<EOL>
+18-07-20 01:30:35 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:30:35 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:30:35 >> MIME-Version: 1.0<EOL>
+18-07-20 01:30:35 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:30:35 >> <EOL>
+18-07-20 01:30:35 >> Hi, you just received an email fromsamarth_29@yahoo.com/r/nHow are you doing<EOL>
+18-07-20 01:30:35 >> .<EOL>
+18-07-20 01:30:36 << 250 2.0.0 OK 1532075438 c29-v6sm1982916pfe.169 - gsmtp<EOL>
+18-07-20 01:30:36 >> QUIT<EOL>
+18-07-20 01:30:36 << 221 2.0.0 closing connection c29-v6sm1982916pfe.169 - gsmtp<EOL>
+18-07-20 01:30:36 ** Disconnected.
+18-07-20 01:30:36 ** Disconnected.
+18-07-20 01:30:36 ** Disconnected.
+18-07-20 01:35:03 ** --- MESSAGE BEGIN ---
+18-07-20 01:35:03 ** To: samarth_29@yahoo.com
+18-07-20 01:35:03 ** Subject: Thank you for contacting us  Samarth
+18-07-20 01:35:03 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:35:03 ** From: [connectband.473]@gmail.com
+18-07-20 01:35:03 ** MIME-Version: 1.0
+18-07-20 01:35:03 ** Content-type: text/html; charset=utf-8
+18-07-20 01:35:03 ** 
+18-07-20 01:35:03 ** Hi, We have received your message\nMessage 1
+18-07-20 01:35:03 ** --- MESSAGE END ---
+18-07-20 01:35:04 ** Connecting to smtp.gmail.com:465
+18-07-20 01:35:05 ** Connected.
+18-07-20 01:35:05 << 220 smtp.gmail.com ESMTP h6-v6sm1705686pfn.80 - gsmtp<EOL>
+18-07-20 01:35:05 >> EHLO localhost<EOL>
+18-07-20 01:35:05 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:35:05 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:35:05 >> AUTH LOGIN<EOL>
+18-07-20 01:35:05 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:35:05 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:35:05 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:35:05 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:35:05 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:35:05 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:35:05 << 250 2.1.0 OK h6-v6sm1705686pfn.80 - gsmtp<EOL>
+18-07-20 01:35:05 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:35:05 << 250 2.1.5 OK h6-v6sm1705686pfn.80 - gsmtp<EOL>
+18-07-20 01:35:05 >> DATA<EOL>
+18-07-20 01:35:06 << 354  Go ahead h6-v6sm1705686pfn.80 - gsmtp<EOL>
+18-07-20 01:35:06 >> Date: Fri, 20 Jul 2018 01:35:06 -0700<EOL>
+18-07-20 01:35:06 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:35:06 >> Subject: Thank you for contacting us  Samarth<EOL>
+18-07-20 01:35:06 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:35:06 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:35:06 >> MIME-Version: 1.0<EOL>
+18-07-20 01:35:06 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:35:06 >> <EOL>
+18-07-20 01:35:06 >> Hi, We have received your message\nMessage 1<EOL>
+18-07-20 01:35:06 >> .<EOL>
+18-07-20 01:35:07 << 250 2.0.0 OK 1532075709 h6-v6sm1705686pfn.80 - gsmtp<EOL>
+18-07-20 01:35:07 >> QUIT<EOL>
+18-07-20 01:35:07 << 221 2.0.0 closing connection h6-v6sm1705686pfn.80 - gsmtp<EOL>
+18-07-20 01:35:07 ** Disconnected.
+18-07-20 01:35:07 ** Disconnected.
+18-07-20 01:35:07 ** Disconnected.
+18-07-20 01:37:40 ** --- MESSAGE BEGIN ---
+18-07-20 01:37:40 ** To: samarth_29@yahoo.com
+18-07-20 01:37:40 ** Subject: Thank you for contacting us  Kp
+18-07-20 01:37:40 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:37:40 ** From: [connectband.473]@gmail.com
+18-07-20 01:37:40 ** MIME-Version: 1.0
+18-07-20 01:37:40 ** Content-type: text/html; charset=utf-8
+18-07-20 01:37:40 ** 
+18-07-20 01:37:40 ** Hi, We have received your message\nMEssage 1
+18-07-20 01:37:40 ** --- MESSAGE END ---
+18-07-20 01:37:40 ** Connecting to smtp.gmail.com:465
+18-07-20 01:37:40 ** Connected.
+18-07-20 01:37:40 << 220 smtp.gmail.com ESMTP g16-v6sm2161064pfe.88 - gsmtp<EOL>
+18-07-20 01:37:40 >> EHLO localhost<EOL>
+18-07-20 01:37:40 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:37:40 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:37:40 >> AUTH LOGIN<EOL>
+18-07-20 01:37:40 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:37:40 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:37:40 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:37:40 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:37:41 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:37:41 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:37:41 << 250 2.1.0 OK g16-v6sm2161064pfe.88 - gsmtp<EOL>
+18-07-20 01:37:41 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:37:41 << 250 2.1.5 OK g16-v6sm2161064pfe.88 - gsmtp<EOL>
+18-07-20 01:37:41 >> DATA<EOL>
+18-07-20 01:37:41 << 354  Go ahead g16-v6sm2161064pfe.88 - gsmtp<EOL>
+18-07-20 01:37:41 >> Date: Fri, 20 Jul 2018 01:37:41 -0700<EOL>
+18-07-20 01:37:41 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:37:41 >> Subject: Thank you for contacting us  Kp<EOL>
+18-07-20 01:37:41 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:37:41 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:37:41 >> MIME-Version: 1.0<EOL>
+18-07-20 01:37:41 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:37:41 >> <EOL>
+18-07-20 01:37:41 >> Hi, We have received your message\nMEssage 1<EOL>
+18-07-20 01:37:41 >> .<EOL>
+18-07-20 01:37:42 << 250 2.0.0 OK 1532075864 g16-v6sm2161064pfe.88 - gsmtp<EOL>
+18-07-20 01:37:42 >> QUIT<EOL>
+18-07-20 01:37:42 << 221 2.0.0 closing connection g16-v6sm2161064pfe.88 - gsmtp<EOL>
+18-07-20 01:37:42 ** Disconnected.
+18-07-20 01:37:42 ** Disconnected.
+18-07-20 01:37:42 ** Disconnected.
+18-07-20 01:41:59 ** --- MESSAGE BEGIN ---
+18-07-20 01:41:59 ** To: samarth_29@yahoo.com
+18-07-20 01:41:59 ** Subject: Thank you for contacting us  as
+18-07-20 01:41:59 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:41:59 ** From: [connectband.473]@gmail.com
+18-07-20 01:41:59 ** MIME-Version: 1.0
+18-07-20 01:41:59 ** Content-type: text/html; charset=utf-8
+18-07-20 01:41:59 ** 
+18-07-20 01:41:59 ** Hi, We have received your message. <br>dsfasdsa
+18-07-20 01:41:59 ** --- MESSAGE END ---
+18-07-20 01:42:00 ** Connecting to smtp.gmail.com:465
+18-07-20 01:42:00 ** Connected.
+18-07-20 01:42:00 << 220 smtp.gmail.com ESMTP n12-v6sm4203165pfh.146 - gsmtp<EOL>
+18-07-20 01:42:00 >> EHLO localhost<EOL>
+18-07-20 01:42:00 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:42:00 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:42:00 >> AUTH LOGIN<EOL>
+18-07-20 01:42:00 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:42:00 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:42:00 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:42:00 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:42:00 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:42:00 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:42:00 << 250 2.1.0 OK n12-v6sm4203165pfh.146 - gsmtp<EOL>
+18-07-20 01:42:00 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:42:00 << 250 2.1.5 OK n12-v6sm4203165pfh.146 - gsmtp<EOL>
+18-07-20 01:42:00 >> DATA<EOL>
+18-07-20 01:42:01 << 354  Go ahead n12-v6sm4203165pfh.146 - gsmtp<EOL>
+18-07-20 01:42:01 >> Date: Fri, 20 Jul 2018 01:42:01 -0700<EOL>
+18-07-20 01:42:01 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:42:01 >> Subject: Thank you for contacting us  as<EOL>
+18-07-20 01:42:01 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:42:01 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:42:01 >> MIME-Version: 1.0<EOL>
+18-07-20 01:42:01 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:42:01 >> <EOL>
+18-07-20 01:42:01 >> Hi, We have received your message. <br>dsfasdsa<EOL>
+18-07-20 01:42:01 >> .<EOL>
+18-07-20 01:42:01 << 250 2.0.0 OK 1532076123 n12-v6sm4203165pfh.146 - gsmtp<EOL>
+18-07-20 01:42:01 >> QUIT<EOL>
+18-07-20 01:42:02 << 221 2.0.0 closing connection n12-v6sm4203165pfh.146 - gsmtp<EOL>
+18-07-20 01:42:02 ** Disconnected.
+18-07-20 01:42:02 ** Disconnected.
+18-07-20 01:42:02 ** Disconnected.
+18-07-20 01:45:25 ** --- MESSAGE BEGIN ---
+18-07-20 01:45:25 ** To: samarth_29@yahoo.com
+18-07-20 01:45:25 ** Subject: Thank you for contacting us - Super
+18-07-20 01:45:25 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:45:25 ** From: [connectband.473]@gmail.com
+18-07-20 01:45:25 ** MIME-Version: 1.0
+18-07-20 01:45:25 ** Content-type: text/html; charset=utf-8
+18-07-20 01:45:25 ** 
+18-07-20 01:45:25 ** Hi, We have received your message - <br>IMportant Message<br>We will get back to you shortly.
+18-07-20 01:45:25 ** --- MESSAGE END ---
+18-07-20 01:45:25 ** Connecting to smtp.gmail.com:465
+18-07-20 01:45:26 ** Connected.
+18-07-20 01:45:26 << 220 smtp.gmail.com ESMTP t69-v6sm3628054pfj.7 - gsmtp<EOL>
+18-07-20 01:45:26 >> EHLO localhost<EOL>
+18-07-20 01:45:26 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:45:26 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:45:26 >> AUTH LOGIN<EOL>
+18-07-20 01:45:26 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:45:26 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:45:26 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:45:26 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:45:26 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:45:26 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:45:26 << 250 2.1.0 OK t69-v6sm3628054pfj.7 - gsmtp<EOL>
+18-07-20 01:45:26 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:45:26 << 250 2.1.5 OK t69-v6sm3628054pfj.7 - gsmtp<EOL>
+18-07-20 01:45:26 >> DATA<EOL>
+18-07-20 01:45:26 << 354  Go ahead t69-v6sm3628054pfj.7 - gsmtp<EOL>
+18-07-20 01:45:26 >> Date: Fri, 20 Jul 2018 01:45:26 -0700<EOL>
+18-07-20 01:45:26 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:45:26 >> Subject: Thank you for contacting us - Super<EOL>
+18-07-20 01:45:26 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:45:26 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:45:26 >> MIME-Version: 1.0<EOL>
+18-07-20 01:45:26 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:45:26 >> <EOL>
+18-07-20 01:45:26 >> Hi, We have received your message - <br>IMportant Message<br>We will get back to you shortly.<EOL>
+18-07-20 01:45:26 >> .<EOL>
+18-07-20 01:45:27 << 250 2.0.0 OK 1532076329 t69-v6sm3628054pfj.7 - gsmtp<EOL>
+18-07-20 01:45:27 >> QUIT<EOL>
+18-07-20 01:45:27 << 221 2.0.0 closing connection t69-v6sm3628054pfj.7 - gsmtp<EOL>
+18-07-20 01:45:27 ** Disconnected.
+18-07-20 01:45:27 ** Disconnected.
+18-07-20 01:45:27 ** Disconnected.
+18-07-20 01:46:36 ** --- MESSAGE BEGIN ---
+18-07-20 01:46:36 ** To: samarth_29@yahoo.com
+18-07-20 01:46:36 ** Subject: Thank you for contacting us - Samarth
+18-07-20 01:46:36 ** X-PHP-Originating-Script: 0:contact.php
+18-07-20 01:46:36 ** From: [connectband.473]@gmail.com
+18-07-20 01:46:36 ** MIME-Version: 1.0
+18-07-20 01:46:36 ** Content-type: text/html; charset=utf-8
+18-07-20 01:46:36 ** 
+18-07-20 01:46:36 ** Hi, We have received your message - asdasdasdsad<br><br>We will get back to you shortly.
+18-07-20 01:46:36 ** --- MESSAGE END ---
+18-07-20 01:46:36 ** Connecting to smtp.gmail.com:465
+18-07-20 01:46:37 ** Connected.
+18-07-20 01:46:37 << 220 smtp.gmail.com ESMTP z2-v6sm1475729pgv.12 - gsmtp<EOL>
+18-07-20 01:46:37 >> EHLO localhost<EOL>
+18-07-20 01:46:37 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-20 01:46:37 ** Authenticating as connectband.473@gmail.com
+18-07-20 01:46:37 >> AUTH LOGIN<EOL>
+18-07-20 01:46:37 << 334 VXNlcm5hbWU6<EOL>
+18-07-20 01:46:37 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-20 01:46:37 << 334 UGFzc3dvcmQ6<EOL>
+18-07-20 01:46:37 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-20 01:46:37 << 235 2.7.0 Accepted<EOL>
+18-07-20 01:46:37 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-20 01:46:37 << 250 2.1.0 OK z2-v6sm1475729pgv.12 - gsmtp<EOL>
+18-07-20 01:46:37 >> RCPT TO: <samarth_29@yahoo.com><EOL>
+18-07-20 01:46:37 << 250 2.1.5 OK z2-v6sm1475729pgv.12 - gsmtp<EOL>
+18-07-20 01:46:37 >> DATA<EOL>
+18-07-20 01:46:37 << 354  Go ahead z2-v6sm1475729pgv.12 - gsmtp<EOL>
+18-07-20 01:46:37 >> Date: Fri, 20 Jul 2018 01:46:37 -0700<EOL>
+18-07-20 01:46:37 >> To: samarth_29@yahoo.com<EOL>
+18-07-20 01:46:37 >> Subject: Thank you for contacting us - Samarth<EOL>
+18-07-20 01:46:37 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-20 01:46:37 >> From: [connectband.473]@gmail.com<EOL>
+18-07-20 01:46:37 >> MIME-Version: 1.0<EOL>
+18-07-20 01:46:37 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-20 01:46:37 >> <EOL>
+18-07-20 01:46:37 >> Hi, We have received your message - asdasdasdsad<br><br>We will get back to you shortly.<EOL>
+18-07-20 01:46:37 >> .<EOL>
+18-07-20 01:46:38 << 250 2.0.0 OK 1532076400 z2-v6sm1475729pgv.12 - gsmtp<EOL>
+18-07-20 01:46:38 >> QUIT<EOL>
+18-07-20 01:46:38 << 221 2.0.0 closing connection z2-v6sm1475729pgv.12 - gsmtp<EOL>
+18-07-20 01:46:38 ** Disconnecting from smtp.gmail.com:465
+18-07-20 01:46:38 ** Disconnected.
+18-07-20 01:46:38 ** Disconnected.
+18-07-21 11:58:20 ** --- MESSAGE BEGIN ---
+18-07-21 11:58:20 ** To: aa
+18-07-21 11:58:20 ** Subject: Thank you for contacting us - aa
+18-07-21 11:58:20 ** X-PHP-Originating-Script: 0:contact.php
+18-07-21 11:58:20 ** From: [connectband.473]@gmail.com
+18-07-21 11:58:20 ** MIME-Version: 1.0
+18-07-21 11:58:20 ** Content-type: text/html; charset=utf-8
+18-07-21 11:58:20 ** 
+18-07-21 11:58:20 ** Hi, We have received your message - asdasdasdasd<br><br>We will get back to you shortly.
+18-07-21 11:58:20 ** --- MESSAGE END ---
+18-07-21 11:58:20 ** Connecting to smtp.gmail.com:465
+18-07-21 11:58:21 ** Connected.
+18-07-21 11:58:21 << 220 smtp.gmail.com ESMTP 64-v6sm7544891pfi.89 - gsmtp<EOL>
+18-07-21 11:58:21 >> EHLO localhost<EOL>
+18-07-21 11:58:21 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-21 11:58:21 ** Authenticating as connectband.473@gmail.com
+18-07-21 11:58:21 >> AUTH LOGIN<EOL>
+18-07-21 11:58:21 << 334 VXNlcm5hbWU6<EOL>
+18-07-21 11:58:21 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-21 11:58:21 << 334 UGFzc3dvcmQ6<EOL>
+18-07-21 11:58:21 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-21 11:58:21 << 235 2.7.0 Accepted<EOL>
+18-07-21 11:58:21 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-21 11:58:21 << 250 2.1.0 OK 64-v6sm7544891pfi.89 - gsmtp<EOL>
+18-07-21 11:58:21 >> RCPT TO: <aa@localhost><EOL>
+18-07-21 11:58:21 << 250 2.1.5 OK 64-v6sm7544891pfi.89 - gsmtp<EOL>
+18-07-21 11:58:21 >> DATA<EOL>
+18-07-21 11:58:21 << 354  Go ahead 64-v6sm7544891pfi.89 - gsmtp<EOL>
+18-07-21 11:58:21 >> Date: Sat, 21 Jul 2018 11:58:21 -0700<EOL>
+18-07-21 11:58:21 >> To: aa<EOL>
+18-07-21 11:58:21 >> Subject: Thank you for contacting us - aa<EOL>
+18-07-21 11:58:21 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-21 11:58:21 >> From: [connectband.473]@gmail.com<EOL>
+18-07-21 11:58:21 >> MIME-Version: 1.0<EOL>
+18-07-21 11:58:21 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-21 11:58:21 >> <EOL>
+18-07-21 11:58:21 >> Hi, We have received your message - asdasdasdasd<br><br>We will get back to you shortly.<EOL>
+18-07-21 11:58:21 >> .<EOL>
+18-07-21 11:58:22 << 250 2.0.0 OK 1532199503 64-v6sm7544891pfi.89 - gsmtp<EOL>
+18-07-21 11:58:22 >> QUIT<EOL>
+18-07-21 11:58:22 << 221 2.0.0 closing connection 64-v6sm7544891pfi.89 - gsmtp<EOL>
+18-07-21 11:58:22 ** Disconnected.
+18-07-21 11:58:22 ** Disconnected.
+18-07-21 11:58:22 ** Disconnected.
+18-07-21 11:59:16 ** --- MESSAGE BEGIN ---
+18-07-21 11:59:16 ** To: aa
+18-07-21 11:59:16 ** Subject: Thank you for contacting us - aa
+18-07-21 11:59:16 ** X-PHP-Originating-Script: 0:contact.php
+18-07-21 11:59:16 ** From: [connectband.473]@gmail.com
+18-07-21 11:59:16 ** MIME-Version: 1.0
+18-07-21 11:59:16 ** Content-type: text/html; charset=utf-8
+18-07-21 11:59:16 ** 
+18-07-21 11:59:16 ** Hi, We have received your message - asdasdasdasd<br><br>We will get back to you shortly.
+18-07-21 11:59:16 ** --- MESSAGE END ---
+18-07-21 11:59:16 ** Connecting to smtp.gmail.com:465
+18-07-21 11:59:17 ** Connected.
+18-07-21 11:59:17 << 220 smtp.gmail.com ESMTP p26-v6sm10264889pfi.183 - gsmtp<EOL>
+18-07-21 11:59:17 >> EHLO localhost<EOL>
+18-07-21 11:59:17 << 250-smtp.gmail.com at your service, [172.117.25.158]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH<EOL>250-ENHANCEDSTATUSCODES<EOL>250-PIPELINING<EOL>250-CHUNKING<EOL>250 SMTPUTF8<EOL>
+18-07-21 11:59:17 ** Authenticating as connectband.473@gmail.com
+18-07-21 11:59:17 >> AUTH LOGIN<EOL>
+18-07-21 11:59:17 << 334 VXNlcm5hbWU6<EOL>
+18-07-21 11:59:17 >> Y29ubmVjdGJhbmQuNDczQGdtYWlsLmNvbQ==<EOL>
+18-07-21 11:59:17 << 334 UGFzc3dvcmQ6<EOL>
+18-07-21 11:59:17 >> Q29ubmVjdEBzcjQ3Mw==<EOL>
+18-07-21 11:59:17 << 235 2.7.0 Accepted<EOL>
+18-07-21 11:59:17 >> MAIL FROM: <[connectband.473]@gmail.com><EOL>
+18-07-21 11:59:17 << 250 2.1.0 OK p26-v6sm10264889pfi.183 - gsmtp<EOL>
+18-07-21 11:59:17 >> RCPT TO: <aa@localhost><EOL>
+18-07-21 11:59:17 << 250 2.1.5 OK p26-v6sm10264889pfi.183 - gsmtp<EOL>
+18-07-21 11:59:17 >> DATA<EOL>
+18-07-21 11:59:17 << 354  Go ahead p26-v6sm10264889pfi.183 - gsmtp<EOL>
+18-07-21 11:59:17 >> Date: Sat, 21 Jul 2018 11:59:17 -0700<EOL>
+18-07-21 11:59:17 >> To: aa<EOL>
+18-07-21 11:59:17 >> Subject: Thank you for contacting us - aa<EOL>
+18-07-21 11:59:17 >> X-PHP-Originating-Script: 0:contact.php<EOL>
+18-07-21 11:59:17 >> From: [connectband.473]@gmail.com<EOL>
+18-07-21 11:59:17 >> MIME-Version: 1.0<EOL>
+18-07-21 11:59:17 >> Content-type: text/html; charset=utf-8<EOL>
+18-07-21 11:59:17 >> <EOL>
+18-07-21 11:59:17 >> Hi, We have received your message - asdasdasdasd<br><br>We will get back to you shortly.<EOL>
+18-07-21 11:59:17 >> .<EOL>
+18-07-21 11:59:17 << 250 2.0.0 OK 1532199559 p26-v6sm10264889pfi.183 - gsmtp<EOL>
+18-07-21 11:59:17 >> QUIT<EOL>
+18-07-21 11:59:18 << 221 2.0.0 closing connection p26-v6sm10264889pfi.183 - gsmtp<EOL>
+18-07-21 11:59:18 ** Disconnected.
+18-07-21 11:59:18 ** Disconnected.
+18-07-21 11:59:18 ** Disconnected.
