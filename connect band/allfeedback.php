@@ -29,7 +29,7 @@ if($connect === true){
     <meta name="author" content="Pharaohlab">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- ========== Title ========== -->
-    <title> Connectband </title>
+    <title> Connect Band </title>
     <!-- ========== Favicon Ico ========== -->
    <link rel="icon" href="assets/img/cb.png">
     <!-- ========== STYLESHEETS ========== -->
@@ -81,7 +81,7 @@ if($connect === true){
                     </li>
 
                     <li>
-                        <a href="contact.html">
+                        <a href="contact.php">
                             Contact
                         </a>
                     </li>
