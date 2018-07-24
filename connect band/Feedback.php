@@ -89,7 +89,7 @@ if($connect === true){
                     </li>
                   
                     <li>
-                        <a href="contact.php">
+                        <a href="contact.html">
                             Contact
                         </a>
                     </li>
@@ -213,14 +213,23 @@ if($connect === true){
 													$result = $connect->query("SELECT fm.feedback_data as 'feedback_data', um.first_name as 'first_name' , um.last_name as 'last_name' FROM feedback_master fm, user_master um where fm.band_id = ".$bandid." and um.user_id = fm.user_id ORDER BY RAND() LIMIT 4");
 													if(mysqli_num_rows ($result )>0)
 													{
+														$i=0;
 														while($row = mysqli_fetch_array($result))  
 														{
+															
 															echo '<div class="'."testimonial_box".'">';
 															echo '<p>';
 															echo $row['feedback_data'];
 															echo '</p>';
 															echo '<div class="'."testimonial_author".'">';
-															echo '<img src="'."assets/img/user.png".'" alt="'."author".'">';
+															if(($i%2)==0)
+															{
+																echo '<img src="'."assets/img/user.png".'" alt="'."author".'">';
+															}
+															else
+															{
+																echo '<img src="'."assets/img/pp1.png".'" alt="'."author".'">';
+															}
 															echo '<h5>'.$row['first_name'].' '.$row['last_name'].'</h5>';
 														?>
 														
@@ -232,6 +241,7 @@ if($connect === true){
 															//echo '<center>'."Band Name".'</center>';
 															//echo '<br>';
 															//echo '<span class="'."counter".'">'.$row['Count'].'</span>';
+															$i++;
 														}
 												  }
 												}
@@ -270,6 +280,14 @@ if($connect === true){
 												<input id="btnsbmit" type="submit"  onclick="myfunc2()" name="Coldplay" class="btn btn-primary" value="Write a review">
 												
 											</div>
+										<br>
+										<form method="post" action="allfeedback.php">
+										<?php  
+										
+											echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'."View All Feedbacks".'">';
+											echo '<input name="'."band_id".'" type="'."text".'" value="'.$bandid.'" hidden>';
+										?>	
+										</form>
 										
 										<script type="text/javascript">
 										  function myfunc2() {
