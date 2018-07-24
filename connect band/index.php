@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php session_start();
-$connect = mysqli_connect("localhost", "root", "", "connectband");
+<?php session_start(); 
+$connect = mysqli_connect("localhost", "root", "", "connectband"); 
 
 
 
@@ -64,16 +64,18 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
           <ul class="menu_nav">
 			<li>
 			<?php
-
+				
 				if(isset($_SESSION['userid']))
 				{
-
+					 
 					$userid = 0;
 					$userid = $_SESSION['userid'];
 					$username = $_SESSION['username'];
 					if($userid>0)
 					{
-						echo "Welcome  ".$username." !";
+						
+						echo '<h4 class="'."side_title".'">Welcome   '.$username.'</h4>';
+						//echo "Welcome  ".$username." !";
 						//echo '<input name="'."band_id".'" type="'."text".'" value="'.$bandid.'" hidden>';
 						echo '<br>';
 						echo '<a href="'."logout.php".'">';
@@ -88,7 +90,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					echo 'Login/ Register';
 					echo '</a>';
 				}
-
+				
 			?>
 				<!--<a href="login.php">
 					Login/ Register
@@ -99,7 +101,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
                             Home
                </a>
             </li>
-
+            
             <li>
               <a href="contact.php">
                             Contact
@@ -167,11 +169,11 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
         <div class="portfolio gutters grid img-container" visible="false">
           <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
           <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
-
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/2.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -182,17 +184,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 2");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -202,34 +204,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 2");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Pop  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/3.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -240,17 +242,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 3");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -260,34 +262,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 3");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						////echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Jazz  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/5.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -298,17 +300,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 5");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -318,34 +320,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 5");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Metal  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/6.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -356,17 +358,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 6");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -376,34 +378,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 6");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Country  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/7.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -414,17 +416,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 7");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -434,34 +436,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 7");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Blues  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/8.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -472,17 +474,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 8");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -492,34 +494,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 8");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Blues  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/9.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -530,17 +532,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 9");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -550,34 +552,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 9");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Country  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/10.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -588,17 +590,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 10");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -608,34 +610,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 10");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Metal  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/11.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -646,17 +648,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 11");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -666,34 +668,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 11");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Jazz  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/12.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -704,17 +706,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 12");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -724,34 +726,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 12");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
-          <div class="grid-item Pop  col-sm-12 col-md-6 col-lg-3">
-
+          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/4.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -762,17 +764,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 13");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -782,34 +784,34 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 13");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
           <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
-
+			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/1.jpg" alt="pro1" />
                 <div class="product_info">
-
+                  
                 </div>
               </div>
 			  <br>
@@ -820,17 +822,17 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					<div class="col-12">
 
 						<!--<input type="submit" name="Coldplay" class="btn btn-primary" value="Band Name">-->
-
+				  
 			  <?php
 
-					//$connect = mysqli_connect("localhost", "root", "", "connectband");
+					//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 						if($connect === false){
 							die("ERROR: " . mysqli_connect_error());
 						}
 						else
 						{
 							$result = $connect->query("SELECT * FROM `band_master` where band_id = 14");
-							while($row = mysqli_fetch_array($result))
+							while($row = mysqli_fetch_array($result))  
 							{
 								echo '<input name="'."btnsubmit".'" type="'."submit".'" class="'."btn btn-primary".'" value="'.$row['band_name'].'">';
 								echo '<input name="'."band_id".'" type="'."text".'" value="'.$row['band_id'].'" hidden>';
@@ -840,27 +842,27 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 					//mysqli_close($connect);
 			  ?>
 			  <?php
-
-				//$connect = mysqli_connect("localhost", "root", "", "connectband");
+			  
+				//$connect = mysqli_connect("localhost", "root", "", "connectband");  
 				if($connect === false){
 					die("ERROR: " . mysqli_connect_error());
 				}
 				else
 				{
 					$result = $connect->query("select count(*) as 'Count' from feedback_master fm, band_master bm where fm.band_id = bm.band_id and bm.band_id = 14");
-					while($row = mysqli_fetch_array($result))
+					while($row = mysqli_fetch_array($result))  
 					{
 						//echo '<label>'."    ".$row['Count']."  Reviews".'</label>';
 					}
 				}
 				//mysqli_close($connect);
-
+			  
 			  ?>
 				</div>
 				</center>
 		       </h5>
 			 </form>
-
+			
 		  </div>
           <!--=================== filter portfolio end====================-->
         </div>
