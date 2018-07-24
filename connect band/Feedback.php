@@ -89,7 +89,7 @@ if($connect === true){
                     </li>
                   
                     <li>
-                        <a href="contact.html">
+                        <a href="contact.php">
                             Contact
                         </a>
                     </li>
@@ -259,7 +259,7 @@ if($connect === true){
 												<?php
 													echo '<input name="'."band_id".'" type="'."text".'" value="'.$bandid.'" hidden>';
 												?>
-												<textarea  name="message" placeholder="Massage" id="showthis" style="display:none" class="form-control" cols="4" rows="4" required></textarea>
+												<textarea  name="message" placeholder="Message" id="showthis" style="display:none" class="form-control" cols="4" rows="4" required></textarea>
 											    <input id="buttonsubmit" type="submit"  name="send" style="display:none" class="my-control" value="Submit Feedback">
 											 </form>
 										  

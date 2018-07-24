@@ -177,7 +177,7 @@ mail($to, $subject, $message, $headers);
 													<input type="text" name="subject" placeholder="Subject" class="form-control">
 												</div>
 												<div class="col-12">
-													<textarea  name="message" placeholder="Massage" class="form-control" cols="4" rows="4"></textarea>
+													<textarea  name="message" placeholder="Message" class="form-control" cols="4" rows="4"></textarea>
 												</div>
 												<div class="col-12">
 													<input type="submit" name="send" class="btn btn-primary" value="Send">
