@@ -168,7 +168,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
         <!--=================== filter portfolio start====================-->
         <div class="portfolio gutters grid img-container" visible="false">
           <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Blues  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/2.jpg" alt="pro1" />
@@ -342,7 +342,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Pop  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/6.jpg" alt="pro1" />
@@ -400,7 +400,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Pop  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/7.jpg" alt="pro1" />
@@ -458,7 +458,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Jazz  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/8.jpg" alt="pro1" />
@@ -516,7 +516,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Jazz  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/9.jpg" alt="pro1" />
@@ -574,7 +574,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Metal  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/10.jpg" alt="pro1" />
@@ -632,7 +632,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Metal  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/11.jpg" alt="pro1" />
@@ -690,7 +690,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Country  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/12.jpg" alt="pro1" />
@@ -748,7 +748,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Country  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/4.jpg" alt="pro1" />
@@ -806,7 +806,7 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
 			 </form>
 			
 		  </div>
-          <div class="grid-item Rock  col-sm-12 col-md-6 col-lg-3">
+          <div class="grid-item Blues  col-sm-12 col-md-6 col-lg-3">
 			
               <div class="project_box_one">
                 <img src="assets/img/portfolio/1.jpg" alt="pro1" />
