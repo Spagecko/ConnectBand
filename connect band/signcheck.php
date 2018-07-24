@@ -21,7 +21,7 @@
 						header('Location: '.$url);
 					}		
 					echo "<script>
-					alert('Kindly Register your self.');
+					alert('Please enter a valid username and/or password. Otherwise, please create an account using the Register button.');
 					window.location.href='http://localhost/connect%20band/login.php';
 					</script>";				
 					
