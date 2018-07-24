@@ -21,7 +21,7 @@ mail($to, $subject, $message, $headers);
     <meta name="author" content="Pharaohlab">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- ========== Title ========== -->
-    <title> Contact Us </title>
+    <title> Conatct us </title>
     <!-- ========== Favicon Ico ========== -->
     <link rel="icon" href="assets/img/cb.png">
     <!-- ========== STYLESHEETS ========== -->
