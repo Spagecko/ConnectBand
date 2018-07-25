@@ -31,7 +31,7 @@ if($connect === true){
     <!-- ========== Title ========== -->
     <title> Connect Band </title>
     <!-- ========== Favicon Ico ========== -->
-   <link rel="icon" href="assets/img/cb.png">
+    <link rel="icon" href="assets/img/cb.png">
     <!-- ========== STYLESHEETS ========== -->
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -149,8 +149,8 @@ if($connect === true){
 																}
 															//$connect -> close();
 														}
-											  ?>
-                                         </div>
+											      ?>
+                                           </div>
                                       </div>
 
 
@@ -179,9 +179,6 @@ if($connect === true){
 										<?php
 
 											$dbhost = "localhost";
-$dbuser = "batman";
-$dbpass = "spiderman";
-$db = "connectband";
 
 
 												$connect = mysqli_connect("localhost", "root", "", "connectband"); 
@@ -209,12 +206,12 @@ $db = "connectband";
 																echo '<img src="'."assets/img/pp1.png".'" alt="'."author".'">';
 															}
 														echo '<h5>'.$row['first_name'].' '.$row['last_name'].'</h5>';
-                            echo '<div class="'."divider".'">';
+														echo '<div class="'."divider".'">';
 
-													?>
-                          </div>
+										?>
+										</div>
 
-													</div>
+									</div>
 										<?php
 														echo '</div>';
 

@@ -152,9 +152,9 @@ $connect = mysqli_connect("localhost", "root", "", "connectband");
               </li>
             </ul>-->
            <div class="copy_right">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </div>
           </div>
         </div>

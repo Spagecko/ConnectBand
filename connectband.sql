@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jul 23, 2018 at 07:58 AM
--- Server version: 5.7.21
--- PHP Version: 5.6.35
+-- Host: 127.0.0.1
+-- Generation Time: Jul 25, 2018 at 02:52 AM
+-- Server version: 10.1.34-MariaDB
+-- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,41 +25,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_login`
---
-
-DROP TABLE IF EXISTS `admin_login`;
-CREATE TABLE IF NOT EXISTS `admin_login` (
-  `admin_id` int(10) NOT NULL,
-  `admin_name` varchar(250) NOT NULL,
-  `admin_password` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `admin_login`
---
-
-INSERT INTO `admin_login` (`admin_id`, `admin_name`, `admin_password`) VALUES
-(1, 'admin', 'admin');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `band_master`
 --
 
-DROP TABLE IF EXISTS `band_master`;
-CREATE TABLE IF NOT EXISTS `band_master` (
-  `band_id` int(10) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `band_master` (
+  `band_id` int(10) NOT NULL,
   `band_name` varchar(200) NOT NULL,
   `band_info` varchar(1000) NOT NULL,
   `band_image1` varchar(1000) NOT NULL,
   `band_detailImage` varchar(1000) NOT NULL,
-  `category_id` int(10) NOT NULL,
-  PRIMARY KEY (`band_id`),
-  UNIQUE KEY `band_name` (`band_name`),
-  KEY `category_foreignkey` (`category_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+  `category_id` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `band_master`
@@ -74,7 +50,7 @@ INSERT INTO `band_master` (`band_id`, `band_name`, `band_info`, `band_image1`, `
 (8, 'Pink Floyd', 'Pink Floyd were an english progressive Rock Band founded in London in 1965. They are know as innovators in the progressive and psychedelic fields of rock. Their most notable albums are The Dark Side Of the Moon and The Wall which are one of the best selling albums of all time.', 'assets/img/portfolio/8.jpg', 'assets/img/bg/performer4.jpeg', 7),
 (9, 'The Beach Boys', 'The Beach Boys is a American Surf Rock Band formed in Hawthorne California in 1961. They had a humble beginnings as a garageband than became a staple of southern California Surf culture  in the late 1960s. Many people back look at the Beach Boys with rich nostalgic, with hits that are included in such albums like Pet Sounds.', 'assets/img/portfolio/9.jpg', 'assets/img/bg/pp1.jpeg', 5),
 (10, 'Cold Play', 'ColdPlay is british pop rock band formed in 1996 by lead singer and pianist Chris Martin and lead guitarist Jonny Buckland at University College London. Coldplay is very notable for its best selling albums such as A Rush of Blood to the Head and X&C. Coldplay have won 107 award from 252 nominations throughout their careers. ', 'assets/img/portfolio/10.jpg\r\n', 'assets/img/bg/performer4.jpeg', 3),
-(11, 'Nirvana', 'The most notorious band of the famous Seattle 4 from the early 90s. With such hits like “Smells  Like Teen Spirit” and “Come as You are” Nirvana became the flagship band of Generation X. Nirvana was one of the best selling bands of all time and it also lead to the creation of one of the biggest bands of the world “Foo Fighters”  ', 'assets/img/portfolio/11.jpg\r\n', 'assets/img/bg/pp2.jpeg', 2),
+(11, 'Nirvana', 'The most notorious band of the famous Seattle 4 from the early 90s. With such hits like “Smells  Like Teen Spirit” and “Come as You are” Nirvana became the flagship band of Generation X. Nirvana was one of the best selling bands of all time and it also lead to the creation of one of the biggest bands of the world “Foo Fighters', 'assets/img/portfolio/11.jpg\r\n', 'assets/img/bg/pp2.jpeg', 2),
 (12, 'Genesis', 'Genesis was a  English art rock band that was form in the late 60s.  The band went through many musical style changes from flok to progressive rocks while moving to pop at their careers.They have sold 21.5 million RIAA-certified albums in the United States and their worldwide sales are estimated to be between 100 million and 150 million.', 'assets/img/portfolio/12.jpg', 'assets/img/bg/Performer 5.jpeg\r\n', 6),
 (13, 'The Police', 'The Police Were a British rock band formed in London in 1977, The band is lead by a person called the Sting who is there lead vocalist, guitarist and songwriter of the band. The Police became globally popular and is considered as  one of the pioneers of new wave. ', 'assets/img/portfolio/4.jpg', 'assets/img/bg/Performer4.jpeg', 4),
 (14, 'Eagles', 'The Eagles are a American Country Rock band formed in Los Angeles in 1971, Hotel California is one of  the most overplayed songs in human history. Their greatest hits album is fifth best selling album in America', 'assets/img/portfolio/1.jpg', 'assets/img/bg/Performer3.jpeg', 7);
@@ -85,13 +61,10 @@ INSERT INTO `band_master` (`band_id`, `band_name`, `band_info`, `band_image1`, `
 -- Table structure for table `category_master`
 --
 
-DROP TABLE IF EXISTS `category_master`;
-CREATE TABLE IF NOT EXISTS `category_master` (
-  `category_id` int(10) NOT NULL AUTO_INCREMENT,
-  `category_name` varchar(200) NOT NULL,
-  PRIMARY KEY (`category_id`),
-  UNIQUE KEY `category_name` (`category_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+CREATE TABLE `category_master` (
+  `category_id` int(10) NOT NULL,
+  `category_name` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `category_master`
@@ -111,13 +84,10 @@ INSERT INTO `category_master` (`category_id`, `category_name`) VALUES
 -- Table structure for table `feedback_master`
 --
 
-DROP TABLE IF EXISTS `feedback_master`;
-CREATE TABLE IF NOT EXISTS `feedback_master` (
+CREATE TABLE `feedback_master` (
   `user_id` int(11) NOT NULL,
   `band_id` int(10) NOT NULL,
-  `feedback_data` varchar(500) NOT NULL,
-  PRIMARY KEY (`user_id`,`band_id`),
-  KEY `bandid_foreginkey` (`band_id`)
+  `feedback_data` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -125,21 +95,28 @@ CREATE TABLE IF NOT EXISTS `feedback_master` (
 --
 
 INSERT INTO `feedback_master` (`user_id`, `band_id`, `feedback_data`) VALUES
-(1, 2, 'My First Feedback'),
-(1, 5, 'My 2 qurter feedback');
+(1, 3, 'dfasad'),
+(2, 2, 'This is the worst band ever.'),
+(11, 12, 'This is good band.');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `testimage`
+-- Table structure for table `signin`
 --
 
-DROP TABLE IF EXISTS `testimage`;
-CREATE TABLE IF NOT EXISTS `testimage` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `image` varchar(1000) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+CREATE TABLE `signin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `signin`
+--
+
+INSERT INTO `signin` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -147,49 +124,91 @@ CREATE TABLE IF NOT EXISTS `testimage` (
 -- Table structure for table `user_master`
 --
 
-DROP TABLE IF EXISTS `user_master`;
-CREATE TABLE IF NOT EXISTS `user_master` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user_master` (
+  `user_id` int(11) NOT NULL,
   `user_name` varchar(200) NOT NULL,
   `email` varchar(300) NOT NULL,
   `password` varchar(300) NOT NULL,
   `mobile` bigint(12) NOT NULL,
   `first_name` varchar(100) NOT NULL,
-  `last_name` varchar(100) NOT NULL,
-  PRIMARY KEY (`user_id`),
-  UNIQUE KEY `user_name` (`user_name`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `last_name` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_master`
 --
 
 INSERT INTO `user_master` (`user_id`, `user_name`, `email`, `password`, `mobile`, `first_name`, `last_name`) VALUES
-(1, 'samarth01', 'samarth@gmail.com', 'mypassword', 65745484351, 'Samarth', 'Shah');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `voting`
---
-
-DROP TABLE IF EXISTS `voting`;
-CREATE TABLE IF NOT EXISTS `voting` (
-  `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `link` varchar(255) NOT NULL,
-  `votes_up` int(11) NOT NULL DEFAULT '0',
-  `votes_down` int(11) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+(1, 'samarth01', 'samarth@gmail.com', 'mypassword', 9898986767, 'Samarth', 'Shah'),
+(2, 'kyle0775168', 'lijiacheng27@ymail.com', '112233', 1234567890, 'jia', 'kyle');
 
 --
--- Dumping data for table `voting`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `voting` (`id`, `title`, `link`, `votes_up`, `votes_down`) VALUES
-(1, 'google', 'www.google.com', 3, 1),
-(2, 'yahoo', 'www.yahoo.com', 1, 0);
+--
+-- Indexes for table `band_master`
+--
+ALTER TABLE `band_master`
+  ADD PRIMARY KEY (`band_id`),
+  ADD UNIQUE KEY `band_name` (`band_name`),
+  ADD KEY `category_foreignkey` (`category_id`);
+
+--
+-- Indexes for table `category_master`
+--
+ALTER TABLE `category_master`
+  ADD PRIMARY KEY (`category_id`),
+  ADD UNIQUE KEY `category_name` (`category_name`);
+
+--
+-- Indexes for table `feedback_master`
+--
+ALTER TABLE `feedback_master`
+  ADD PRIMARY KEY (`user_id`,`band_id`),
+  ADD KEY `bandid_foreginkey` (`band_id`);
+
+--
+-- Indexes for table `signin`
+--
+ALTER TABLE `signin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user_master`
+--
+ALTER TABLE `user_master`
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `user_name` (`user_name`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `band_master`
+--
+ALTER TABLE `band_master`
+  MODIFY `band_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `category_master`
+--
+ALTER TABLE `category_master`
+  MODIFY `category_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `signin`
+--
+ALTER TABLE `signin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `user_master`
+--
+ALTER TABLE `user_master`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
